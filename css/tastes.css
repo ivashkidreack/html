@@ -1,0 +1,120 @@
+.tastes {
+    background-color:var(--dark-background-color);
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px;
+}
+.tastes__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.tastes__title {
+    text-align: center;
+    color: var(--color-light);
+    font-family: var(--small-font-family);
+    font-size: 14px;
+    font-weight: 400;
+}
+.tastes__subtitle {
+    text-align: center;
+    margin-top: 20px;
+    color: var(--color-light);
+    font-family: var(--heading-font-family);
+    font-size: 34px;
+    font-weight: 400;
+}
+.tastes__txt {
+    text-align: center;
+    margin-top: 25px;
+    color: var(--color-light);
+    font-family: var(--p-font-family);
+    font-size: 20px;
+    font-weight: 500;
+}
+.tastes__carusel-container {
+    display: grid;
+    gap: 15px;
+}
+.tastes__carusel {
+    margin-top: 45px;
+    background-color: var(--bt-dark-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 31px 27px 27px 27px;
+    border-radius: 2%;
+    box-shadow: 0 5px 10px 7px rgb(136 140 133 / 10%);
+}
+.tastes__name {
+    text-align: center;
+    font-family: var(--heading-font-family);
+    font-size: 22px;
+    color: var(--color-light);
+    font-weight: 400;
+}
+.tastes__decription {
+    text-align: center;
+    font-family: var(--p-font-family);
+    font-size: 18px;
+    color: var(--txt-color);
+    font-weight: 400;
+}
+.tastes__price {
+    display: flex;
+    justify-content: center;
+}
+.tastes__dollar-price {
+    font-family: var(--p-font-family);
+    color: var(--bt-light-color);
+    font-size: 18px;
+    font-weight: 700;
+}
+.tastes__price-ball {
+    font-family: var(--p-font-family);
+    color: var(--txt-color);
+    font-size: 18px;
+    font-weight: 700;
+}
+.tastes__more {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.tastes__more-bt {
+    font-family: var(--p-font-family);
+    color: var(--color-light);
+    font-weight: 700;
+    box-sizing: border-box;
+    background-color: var(--bt-light-color);
+    border-radius: 32px;
+    padding: 18px 35px;
+    margin: 10px;
+    transition: 0.4s;
+}
+.tastes__more-bt:hover {
+    background-color: var(--bt-light-hover-color);
+}
+@media (min-width: 770px) {
+    .tastes__carusel-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .tastes__title {
+        font-size: 17px;
+    }
+    .tastes__subtitle {
+        font-size: 41px;
+    }
+}
+@media (min-width: 990px) {
+    .tastes__carusel-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .tastes__title {
+        font-size: 21px;
+    }
+    .tastes__subtitle {
+        font-size: 48px;
+    }
+}

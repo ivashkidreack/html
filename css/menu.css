@@ -1,0 +1,154 @@
+.menu {
+    background-color:var(--dark-background-color);
+    display: grid;
+    padding: 65px 24px 60px 24px;
+}
+.menu__nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.menu__desserts {
+    margin-top: 50px;
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 31px 27px 27px 27px;
+    text-align: center;
+    background: url(../img/menu-desserts.png) center center no-repeat;
+    background-size: cover;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px 7px rgb(136 140 133 / 10%);
+    width: 100%;
+    height: auto;
+}
+.menu__desserts-title {
+    box-sizing: border-box;
+    font-family: var(--heading-font-family);
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--color-light);
+}
+.menu__desserts-link {
+    display: block;
+    margin-top: 35px;
+    font-family: var(--p-font-family);
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--color-light);
+    box-sizing: border-box;
+    background-color: var(--bt-dark-color);
+    border-radius: 32px;
+    padding: 15px 30px;
+    transition: 0.4s;
+}
+.menu__desserts-link:hover {
+    background-color: var(--bt-dark-hover-color);
+}
+.menu__shakes {
+    margin-top: 50px;
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 31px 27px 27px 27px;
+    text-align: center;
+    background: url(../img/menu-milk-shakes.png) center center no-repeat;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px 7px rgb(136 140 133 / 10%);
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+.menu__shakes-title {
+    box-sizing: border-box;
+    font-family: var(--heading-font-family);
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--color-light);
+}
+.menu__shakes-link {
+    text-align: center;
+    margin-top: 35px;
+    font-family: var(--p-font-family);
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--color-light);
+    box-sizing: border-box;
+    background-color: var(--bt-dark-hover-color);
+    border-radius: 32px;
+    padding: 15px 30px;
+    transition: 0.4s;
+}
+.menu__shakes-link:hover {
+    background-color: var(--bt-dark-color);
+}
+.menu__ice-cream {
+    margin-top: 50px;
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 31px 27px 27px 27px;
+    text-align: center;
+    background: url(../img/menu-ice-cream.png) center center no-repeat;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px 7px rgb(136 140 133 / 10%);
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+.menu__ice-cream-title {
+    box-sizing: border-box;
+    font-family: var(--heading-font-family);
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--color-light);
+}
+.menu__ice-cream-link {
+    text-align: center;
+    margin-top: 35px;
+    font-family: var(--p-font-family);
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--color-light);
+    box-sizing: border-box;
+    background-color: var(--bt-dark-color);
+    border-radius: 32px;
+    padding: 15px 30px;
+    transition: 0.4s;
+}
+.menu__ice-cream-link:hover {
+    background-color: var(--bt-dark-hover-color);
+}
+@media (min-width: 770px) {
+    .menu__desserts-link {
+        margin-bottom: 265px;
+    }
+    .menu__shakes-link {
+        margin-bottom: 265px;
+    }
+    .menu__ice-cream-link {
+        margin-bottom: 265px;
+    }
+    .menu {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+}
+@media (min-width: 990px) {
+    .menu__desserts-link {
+        margin-bottom: 265px;
+    }
+    .menu__shakes-link {
+        margin-bottom: 265px;
+    }
+    .menu__ice-cream-link {
+        margin-bottom: 265px;
+    }
+    .menu {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+}

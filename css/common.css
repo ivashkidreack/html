@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Dangrek&family=Leckerli+One&family=Source+Sans+3&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+img {
+    width: 100%;
+    display: block;
+}
+.container {
+    margin: auto;
+}
+:root {
+    --bt-dark-hover-color: #a55376;
+    --dark-background-color: #493b5f;
+    --bt-dark-color: #32264b;
+    --ui-light-accent-color: #b87390;
+    --bt-light-color: rgb(255, 196, 82);
+    --bt-light-hover-color: rgb(203, 158, 68);
+    --ui-link-color: #242424;
+    --color-light: #fff;
+    --txt-color: #b9b1c5;
+    --ui-link-hover-color-light: #56dae7;
+    --p-font-family: "Source Sans 3",sans-serif;  
+    --small-font-family: "Leckerli One",undefined;
+    --heading-font-family: "Dangrek",cursive;
+}

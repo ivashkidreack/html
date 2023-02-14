@@ -6,20 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mr. Snowman Cafe</title>
     <link rel="shotcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css">
 </head>
-<body>
-    <header class="header" style="background-color:rgb(182, 166, 186) ;">
-        <div class="header__upper-container">
+<body class="container">
+    <header class="header">
+        <div class="header__upper-nav">
             <div class="header__left-menu">
                 <a href="#">About us</a>
                 <a href="#">Menu</a>
                 <a href="#">Special</a>
             </div>
-            <nav class="header__nav">
-                <a href="#">
-                    <img src="img/header logo.svg" width="100" alt="Logo mr. Snowman">
-                </a>
-            </nav>
+            <div class="header__logo">
+                <a class="navbar-brand" href="#"><img class="header__logo" src="img/header-logo.svg" alt="Logo mr. Snowman"></a>
+            </div>
             <div class="header__right-menu">
                 <a href="#">Ingridients</a>
                 <a href="#">Blog</a>
@@ -28,11 +27,11 @@
         </div>
         <div class="header__baner">
             <p class="header__subtitle">Welcome to</p>
-            <h1 class="header__tile">Mr. Snowman Cafe</h1>
+            <h1 class="header__title">Mr. Snowman Cafe</h1>
             <p class="header__txt">Handcrafting the most delicious ice cream since 1999.</p>
-            <div class="header__navigaion">
-                <a href="#" class="hader__about">About Cafe</a>
-                <a href="#" class="header__menu">Our Menu</a>
+            <div class="header__nav">
+                <a href="#" class="header__about">About Cafe</a>
+                <a href="#" class="header__menu">Our menu</a>
             </div>
         </div>
     </header>
@@ -40,15 +39,21 @@
         <section class="menu">
             <div class="menu__desserts">
                 <p class="menu__desserts-title">Desserts</p>
-                <a href="#" class="menu__desserts-link">View Menu</a>
+                <div class="menu__nav">
+                    <a href="#" class="menu__desserts-link">View Menu</a>
+                </div>
             </div>
             <div class="menu__shakes">
                 <p class="menu__shakes-title">MILK Shakes</p>
-                <a href="#" class="menu__shakes-link">View Menu</a>
+                <div class="menu__nav">
+                    <a href="#" class="menu__shakes-link">View Menu</a>
+                </div>
             </div>
             <div class="menu__ice-cream">
                 <p class="menu__ice-cream-title">Ice Cream</p>
-                <a href="#" class="menu__ice-cream-link">View Menu</a>
+                <div class="menu__nav">
+                    <a href="#" class="menu__ice-cream-link">View Menu</a>
+                </div>
             </div>
 
         </section> 
@@ -56,67 +61,59 @@
             <div class="tastes__info">
                 <h2 class="tastes__title">Ice cream tastes</h2>
                 <h3 class="tastes__subtitle">Select Your Favorite Taste</h3>
-                <p class="tastes__info">From strawberry to coconut, we have them all!</p>
+                <p class="tastes__txt">From strawberry to coconut, we have them all!</p>
             </div>
-            <div class="tastes__carusel">
-                <div class="tastes__strawberry">
-                    <img src="img/strawberry-ball.png" width="150" alt="Strawberry Gem" class="tastes__foto">
+            <div class="tastes__carusel-container">
+                <div class="tastes__strawberry tastes__carusel">
+                    <img src="img/strawberry-ball.png"alt="Strawberry Gem" class="tastes__foto">
                     <p class="tastes__name" >Strawberry Gem</p>
                     <p class="tastes__decription">fruity and fresh</p>
                     <div class="tastes__price">
                         <p class="tastes__dollar-price">$5</p>
-                        <p class="tastes__price-ball">/ ball</p>
+                        <p class="tastes__price-ball"> / ball</p>
                     </div>
                 </div>
-            </div>
-
-            <div class="tastes__carusel">
-                <div class="tastes__choco">
-                    <img src="img/choco-ball.png" width="150" alt="Choco & Hazelnut" class="tastes__foto">
+                <div class="tastes__choco tastes__carusel">
+                    <img src="img/choco-ball.png" alt="Choco & Hazelnut" class="tastes__foto">
                     <p class="tastes__name" >Choco & Hazelnut</p>
                     <p class="tastes__decription">rich sweet taste</p>
                     <div class="tastes__price">
                         <p class="tastes__dollar-price">$5</p>
-                        <p class="tastes__price-ball">/ ball</p>
+                        <p class="tastes__price-ball"> / ball</p>
                     </div>
                 </div>
-            </div>
-            <div class="tastes__carusel">
-                <div class="tastes__paradise">
-                    <img src="img/paradise-ball.png" width="150" alt="Blue Paradise" class="tastes__foto">
+                <div class="tastes__paradise tastes__carusel">
+                    <img src="img/paradise-ball.png"alt="Blue Paradise" class="tastes__foto">
                     <p class="tastes__name" >Blue Paradise</p>
                     <p class="tastes__decription">sour and fruity</p>
                     <div class="tastes__price">
                         <p class="tastes__dollar-price">$5</p>
-                        <p class="tastes__price-ball">/ ball</p>
+                        <p class="tastes__price-ball"> / ball</p>
                     </div>
                 </div>
-            </div>
-            <div class="tastes__carusel">
-                <div class="tastes__mango">
-                    <img src="img/mango-ball.png" width="150" alt="Mango Dreams" class="tastes__foto">
+                <div class="tastes__mango tastes__carusel">
+                    <img src="img/mango-ball.png" alt="Mango Dreams" class="tastes__foto">
                     <p class="tastes__name" >Mango Dreams</p>
                     <p class="tastes__decription">cassic tropic taste</p>
                     <div class="tastes__price">
                         <p class="tastes__dollar-price">$5</p>
-                        <p class="tastes__price-ball">/ ball</p>
+                        <p class="tastes__price-ball"> / ball</p>
                     </div>
                 </div>
-            </div>
-            <div class="tastes__carusel">
-                <div class="tastes__pistachio">
-                    <img src="img/pistachio-ball.png" width="150" alt="Pistachio Heaven" class="tastes__foto">
+                <div class="tastes__pistachio tastes__carusel">
+                    <img src="img/pistachio-ball.png" alt="Pistachio Heaven" class="tastes__foto">
                     <p class="tastes__name" >Pistachio Heaven</p>
                     <p class="tastes__decription">creamy nutty flavor</p>
                     <div class="tastes__price">
                         <p class="tastes__dollar-price">$5</p>
-                        <p class="tastes__price-ball">/ ball</p>
+                        <p class="tastes__price-ball"> / ball</p>
                     </div>
                 </div>
             </div>
+            <div class="tastes__more">
+                <a class="tastes__more-bt" href="#">Show me more</a>
+            </div>
         </secion>
-
-
         <section class="ingredients">
             <img class="ingridients__foto" width="300" src="img/cerry-cone-ice-cream.png" alt="">
             <div class="ingridients__info">
@@ -133,6 +130,5 @@
         </section> 
         
     </main>
-    
 </body>
 </html>
