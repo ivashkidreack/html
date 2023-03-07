@@ -1,0 +1,96 @@
+.about {
+    background-color: var(--light-bg-color);
+    padding: 0 24px 110px 24px;
+}
+.about__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 190px;
+}
+.about__waves {
+    margin-top: -250px;
+}
+.about__info {
+    text-align: center;
+    color: var(--subtitle-font-color);
+    font-family: var(--p-font-family);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0.4px;
+}
+.about__detail-info {
+    margin-top: 50px;
+    text-align: center;
+    color: var(--txt-color);
+    font-family: var(--p-font-family);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28.8px;
+    letter-spacing: 0.4px;
+    margin-bottom: 50px;
+}
+.about__icons-details {
+    display: flex;
+    flex-direction: column;
+}
+.about__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.about__img {
+    margin: 25px 0;
+    background-color: var(--bt-dark-hover-color);
+    width: 50px;
+    height: 50px;
+    height: 100%;
+    border-radius: 50%;
+    padding: 12px;
+}
+.about__num {
+    color: var(--color-light);
+    font-family: var(--heading-font-family);
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 37.4px;
+}
+.about__line {
+    background-color: var(--bt-dark-hover-color);
+    height: 5px;
+    width: 29px;
+    border-radius: 2px;
+    margin: 15px 0;
+}
+.about__txt {
+    color: var(--color-light);
+    font-family: var(--p-font-family);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28.8px;
+    margin-bottom: 25px;
+}
+@media (min-width: 768px) {
+    .about__detail-info {
+        margin: 45px 175px;
+    }
+    .about__icons-details {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .about__txt {
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .about__container {
+        padding: 0 15px;
+        width: 25%;
+    }
+    
+}
+.about__btn-waves {
+    margin-top: -50px;
+}

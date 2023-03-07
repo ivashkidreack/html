@@ -11,17 +11,40 @@ img {
     display: block;
 }
 .container {
+    max-width: 1200px;
     margin: auto;
+}
+h2 {
+    color: var(--color-light);
+    font-family: var(--small-font-family);
+    font-size: 14px;
+    font-weight: 400;
+}
+h3 {
+    color: var(--color-light);
+    font-family: var(--heading-font-family);
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 37.4px;
+}
+@media (min-width: 768px) {
+    h2 {
+        font-size: 21px;
+    }
+    h3 {
+        font-size: 48px;
+    }
 }
 :root {
     --bt-dark-hover-color: #a55376;
     --dark-background-color: #493b5f;
     --bt-dark-color: #32264b;
-    --ui-light-accent-color: #b87390;
+    --light-bg-color: #b87390;
     --bt-light-color: rgb(255, 196, 82);
     --bt-light-hover-color: rgb(203, 158, 68);
     --ui-link-color: #242424;
     --color-light: #fff;
+    --subtitle-font-color: rgb(240, 240, 240);
     --txt-color: #b9b1c5;
     --ui-link-hover-color-light: #56dae7;
     --p-font-family: "Source Sans 3",sans-serif;  
